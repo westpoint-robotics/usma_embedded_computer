@@ -30,7 +30,7 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
   ```
 5. Make sure the wifi dongle is assigned wlan0. If not, you can change it under the udev rules:
  - `sudo nano /etc/udev/rules.d/70-persistent-net.rules`
-6. Once connected to wifi, ensure you have performed the other [installs] (https://wiki.ubuntu.com/ARM/RaspberryPi)
+6. Once connected to wifi, ensure you have performed the other [installs] (https://wiki.ubuntu.com/ARM/RaspberryPi):
  - Resize partition
  - Install swapfile
  - The serial console will be configed later.
