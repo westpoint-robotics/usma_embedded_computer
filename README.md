@@ -10,10 +10,10 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
  - If a wired connection is unavailable, use a USB-tether on a phone or hotspot.  Check with the CSG.
  - Set up your RPi2 interfaces to allow a USB tether:
  - `$ sudo nano /etc/network/interfaces`
- ```
- allow-hotplug usb0
- iface usb0 inet dhcp
- ```
+  ```
+  allow-hotplug usb0
+  iface usb0 inet dhcp
+  ```
 3. Install linux-firmware drivers to enable wifi and ssh.
  - `sudo apt-get install linux-firmware`
  - `sudo apt-get install wicd`
@@ -21,21 +21,21 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
 4. Setup [wifi] (https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic) on your device.
  - Aother [reference] (https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-occidentalis).
  - `sudo nano /etc/network/interfaces`
- ```
- auto wlan0
- allow-hotplug wlan0
- iface wlan0 inet dhcp
-   wpa-ssid "EECSDS3"
-   wpa-psk "accessgranted"
- ```
+  ```
+  auto wlan0
+  allow-hotplug wlan0
+  iface wlan0 inet dhcp
+    wpa-ssid "EECSDS3"
+    wpa-psk "accessgranted"
+  ```
 5. Make sure the wifi dongle is assigned wlan0. If not, you can change it under the udev rules:
  - `sudo nano /etc/udev/rules.d/70-persistent-net.rules`
 6. Once connected to wifi, ensure you have performed the other [installs] (https://wiki.ubuntu.com/ARM/RaspberryPi)
  - Resize partition
  - Install swapfile
- - The serial console will be configed later
- - GNOME is optional as well
-7. Install build essential
+ - The serial console will be configed later.
+ - GNOME is optional as well.
+7. Install build essential:
  - `sudo apt-get install build-essential -y`
 8. If you would like to set up ROS:
  - [Install ROS] (http://wiki.ros.org/indigo/Installation/UbuntuARM)
