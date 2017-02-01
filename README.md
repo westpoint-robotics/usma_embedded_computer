@@ -3,37 +3,38 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
 
 ## Raspberry Pi 3 
 
-#### 1. Installing OS
+### 1. Installing OS
  *Our disk is going to be a microSDHC Card. Use one with memory greater than 8GB and speed class higher than 10. [[1]](https://ubuntu-mate.org/raspberry-pi/)*
  
- *To create the OS Disk using a Linux machine:*
- - *Option 1*: Using the 'dd' utility in command line:
+#### *To create the OS Disk using a Linux machine:*
+- *Option 1*: Using the 'dd' utility in command line:
   - `sudo apt-get install gddrescue xz-utils`
   - `unxz ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img.xz`
-  - The microSDHC Card maybe present as /sda or /sdb. You can identify the device name with this command
-  - `ls /dev/sd*`
+  - The microSDHC Card maybe present as /sda or /sdb. You can identify the device name by `ls /dev/sd*`
   - Once you've identified 'x' in /dev/sdx, run the following command by replacing 'x'.
   - `sudo ddrescue -D --force ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img /dev/sdx`
   - [Here's] (https://asciinema.org/a/34243) the complete recording of the terminal while executing these commands
   
- - *Option 2*: Using a graphical tool:
+- *Option 2*: Using a graphical tool:
   - `sudo apt-get install gnome-disk-utility`
   - After installation is complete, open the GUI and follow [these] (https://www.youtube.com/watch?v=V_6GNyL6Dac) steps on using the GNOME Disk utility to 'Restore Disk Image'
  
- *To create the OS Disk using a Windows machine:*
+#### *To create the OS Disk using a Windows machine:*
  - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.1 LTS for Raspberry Pi.
  - Once download is complete, the .xz file size should be about 1.1GB. Use [7-Zip] (http://www.7-zip.org/) or [WinZip] (http://www.winzip.com/win/en/downwz.html) to extract the image.
  - Use [Win32 Disk Imager] (https://sourceforge.net/projects/win32diskimager/) to write the image onto the SD card.
  - Open Disk Imager and select path to the image you extracted in the above step. Also select the target device to write onto. This would be the drive corresponding to the SD Card reader (Example- F: or H:)
 
-#### 2. Initial setup 
+### 2. Initial setup 
 - If this your first time with the RPi, you may find the first two pages of this [Quick Start Guide] (https://www.raspberrypi.org/qsg) useful. Ignore the SD Card setup portion, we are not utilizing NOOBS.
 - On the first boot, the Pi will run through a setup wizard where you can create a user account. Please check with the OIC or ESG personnel before creating the username and password. We follow a standard convention for ease of operation.
 
-#### 3. Install Linux drivers and utilities
+### 3. Install useful software and utilities
+ - Install build essential: `sudo apt-get install build-essential -y`
+ - Install SSH server: `sudo apt-get install openssh-server`
+ - Install modem program: `sudo apt-get install minicom`
 
-
-#### 4. Install ROS 
+### 4. Install ROS 
 - Follow instructions on [ROS Wiki] (http://wiki.ros.org/kinetic/Installation/Ubuntu). If you have doubts, check with the OIC. 
 
 
