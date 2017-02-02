@@ -4,7 +4,7 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
 ## Raspberry Pi 3 
 
 ### 1. Installing OS
- *Our disk is going to be a microSDHC Card. Use one with memory greater than 8GB and speed class higher than 10. [[1]](https://ubuntu-mate.org/raspberry-pi/)*
+ *Our disk is going to be a microSDHC Card. Use one with memory greater than 8GB and speed class higher than 10. [[1]](https://ubuntu-mate.org/raspberry-pi/) [[2]] (https://www.youtube.com/watch?v=m5QXsKSwt-c)*
  
 #### *To create the OS Disk using a Linux machine:*
 - *Option 1*: Using the 'dd' utility in command line:
