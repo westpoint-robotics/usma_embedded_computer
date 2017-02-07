@@ -3,7 +3,7 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
 
 ## Raspberry Pi 3 
 
-### 1. Installing OS
+### 1. Installing OS (Ubuntu MATE)
  *Our disk is going to be a microSDHC Card. Use one with memory greater than 8GB and speed class higher than 10. [[1]](https://ubuntu-mate.org/raspberry-pi/) [[2]] (https://www.youtube.com/watch?v=m5QXsKSwt-c)*
  
 #### *To create the OS Disk using a Linux machine:*
@@ -30,13 +30,29 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
 - On the first boot, the Pi will run through a setup wizard where you can create a user account. Please check with the OIC or ESG personnel before creating the username and password. We follow a standard convention for ease of operation.
 
 ### 3. Install useful software and utilities
+ - Install GNOME text editor: `sudo apt-get install gedit`
  - Install build essential: `sudo apt-get install build-essential -y`
  - Install SSH server: `sudo apt-get install openssh-server`
  - Install modem program: `sudo apt-get install minicom`
-
-### 4. Install ROS 
+ 
+### 4. Install ROS (Optional)
 - Follow instructions on [ROS Wiki] (http://wiki.ros.org/kinetic/Installation/Ubuntu). If you have doubts, check with the OIC. 
 
+### 5. Pixy Cam (Optional)
+1. Install dependencies:
+ - `sudo apt-get install libusb-1.0-0.dev`  [[1]] (http://askubuntu.com/questions/629619/how-to-install-libusb)
+ - `sudo apt-get install libboost-all-dev`
+ - `sudo apt-get install cmake`
+
+2. Download Pixy Source Code
+ - `git clone https://github.com/charmedlabs/pixy.git`
+ 
+3. Build & Install
+ - `cd pixy/scripts`
+ - `./build_libpixyusb.sh`
+ - `sudo ./install_libpixyusb.sh`
+
+ 
 
 ## Raspberry Pi 2
 
