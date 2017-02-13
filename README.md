@@ -34,6 +34,7 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
  - Install build essential: `sudo apt-get install build-essential -y`
  - Install SSH server: `sudo apt-get install openssh-server`
  - Install modem program: `sudo apt-get install minicom`
+ - Install git commands: `sudo apt-get install git`
  
 ### 4. Install ROS (Optional)
 - Follow instructions on [ROS Wiki] (http://wiki.ros.org/kinetic/Installation/Ubuntu). If you have doubts, check with the OIC. 
@@ -52,7 +53,14 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
  - `./build_libpixyusb.sh`
  - `sudo ./install_libpixyusb.sh`
 
- 4.
+4. Build and Run example
+ - `./build_hello_pixy.sh`
+ - `cd ../build/hello_pixy`
+ - `sudo ./hello_pixy`
+ 
+5. Install PixyMon (Optional) [[1]] (http://cmucam.org/projects/cmucam5/wiki/Installing_PixyMon_on_Linux)
+  - 
+ 
 
 ## Raspberry Pi 2
 
