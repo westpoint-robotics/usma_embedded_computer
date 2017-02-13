@@ -56,7 +56,7 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
  - `./build_libpixyusb.sh`
  - `sudo ./install_libpixyusb.sh`
 
-4. Build and Run example
+4. Build and Run example script
  - `./build_hello_pixy.sh`
  - `cd ../build/hello_pixy`
  - `sudo ./hello_pixy`
