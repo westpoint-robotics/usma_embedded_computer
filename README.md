@@ -61,7 +61,18 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
  - `sudo ./hello_pixy`
  
 5. Install PixyMon (Optional) [[1]] (http://cmucam.org/projects/cmucam5/wiki/Installing_PixyMon_on_Linux)
-  - 
+  - Install QT: `sudo apt-get install qt4-dev-tools`
+  - `sudo apt-get install qt4-qmake`
+  - `sudo apt-get install qt4-default`
+  - Install G++ compiler: `sudo apt-get install g++`
+  - Download Pixy source code: `git clone https://github.com/charmedlabs/pixy.git`
+  - Run the build script: `cd pixy/scripts`
+  - `./build_pixymon_src.sh`
+  - Add permissions for Pixy USB Interface: `cd ../src/host/linux/`
+  - `sudo cp pixy.rules /etc/udev/rules.d/`
+  - To Open PixyMon, `cd ../../../build/pixymon/bin/`
+  - `./PixyMon`
+  
  
 
 ## Raspberry Pi 2
