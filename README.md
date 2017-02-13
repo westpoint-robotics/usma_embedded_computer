@@ -9,8 +9,7 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
 #### *To create the OS Disk using a Linux machine:*
 - *Option 1*: Using the 'dd' utility in command line:
   - `sudo apt-get install gddrescue xz-utils`
-  - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.1 LTS for Raspberry Pi.
-  - Once download is complete, the .xz file size should be about 1.1GB.
+  - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.1 LTS for Raspberry Pi. Once download is complete, the .xz file size should be about 1.1GB.
   - `cd Downloads/`
   - `unxz ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img.xz`
   - The microSDHC Card maybe present as /sd**a** or /sd**b**. You can identify the device name by `ls /dev/sd*`
