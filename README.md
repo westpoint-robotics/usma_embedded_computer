@@ -29,7 +29,8 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
 
 ### 2. Initial setup 
 - If this your first time with the RPi, you may find the first two pages of this [Quick Start Guide] (https://www.raspberrypi.org/qsg) useful. Ignore the SD Card setup portion, we are not utilizing NOOBS.
-- On the first boot, the Pi will run through a setup wizard where you can create a user account. Please check with the OIC or ESG personnel before creating the username and password. We follow a standard convention for ease of operation.
+- On the first boot, the Pi will run through a setup wizard where you can create a user account. Please check with the OIC or Engineering Support Group personnel before creating the username and password. We follow a standard convention for ease of operation.
+- The Wireless MAC Address of your device should be registered with the Computer Support Group to be able to connect to the EECSDS3 WiFi. This step is performed for devices issued in class or lab. If you have problems connecting, check with your OIC.
 
 ### 3. Install useful software and utilities
  - Install GNOME text editor: `sudo apt-get install gedit`
