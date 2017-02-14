@@ -39,7 +39,8 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
  - Install git commands: `sudo apt-get install git`
  
 ### 4. Install ROS (Optional)
-- Follow instructions on [ROS Wiki] (http://wiki.ros.org/kinetic/Installation/Ubuntu). If you have doubts, check with the OIC. 
+- Follow instructions on [ROS Wiki] (http://wiki.ros.org/kinetic/Installation/Ubuntu) for installing the latest version of ROS i.e. Kinetic Kame. It is compatible with Ubuntu 15.10 and 16.04 LTS. 
+- If you have an older platform such as Ubuntu 14.04 LTS, [ROS Indigo Igloo] (http://wiki.ros.org/indigo) is reccommended.  
 
 ### 5. Pixy Cam (Optional)
 1. Install dependencies:
