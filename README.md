@@ -60,7 +60,7 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
  - `cd ../build/hello_pixy`
  - `sudo ./hello_pixy`
  
-5. Install PixyMon (Optional) [[1]] (http://cmucam.org/projects/cmucam5/wiki/Installing_PixyMon_on_Linux)
+5. Install PixyMon (Optional) [[1]] (http://cmucam.org/projects/cmucam5/wiki/Installing_PixyMon_on_Linux)  [[2]] (http://cmucam.org/projects/cmucam5/wiki/Teach_Pixy_an_object_2)
   - Install QT: `sudo apt-get install qt4-dev-tools`
   - `sudo apt-get install qt4-qmake`
   - `sudo apt-get install qt4-default`
