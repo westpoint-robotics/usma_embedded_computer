@@ -5,7 +5,6 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
 
 ### 1. Installing OS (Ubuntu MATE)
  *Our disk is going to be a microSDHC Card. Use one with memory greater than 8GB and speed class higher than 10. [[1]](https://ubuntu-mate.org/raspberry-pi/) [[2]] (https://www.youtube.com/watch?v=m5QXsKSwt-c)*
- 
 #### *To create the OS Disk using a Linux machine:*
 - *Option 1*: Using the 'dd' utility in command line:
   - `sudo apt-get install gddrescue xz-utils`
@@ -22,6 +21,7 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
   - After installation is complete, open the GUI and follow [these] (https://www.youtube.com/watch?v=V_6GNyL6Dac) steps on using the GNOME Disk utility to 'Restore Disk Image'
  
 #### *To create the OS Disk using a Windows machine:*
+ - Your SD Card, if not brand new, may have sector errors and odd partions. It is always advisable to format the drive before laying down the OS. You may download and use [this] (https://www.sdcard.org/downloads/formatter_4/) tool provided by the SD Card Association.  
  - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.1 LTS for Raspberry Pi.
  - Once download is complete, the .xz file size should be about 1.1GB. Use [7-Zip] (http://www.7-zip.org/) or [WinZip] (http://www.winzip.com/win/en/downwz.html) to extract the image.
  - Use [Win32 Disk Imager] (https://sourceforge.net/projects/win32diskimager/) to write the image onto the SD card.
