@@ -58,9 +58,7 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
  - `sudo ./install_libpixyusb.sh`
 
 4. Set signature using the button on Pixy [(Video Demo)] (https://www.youtube.com/watch?v=7znEmgYZXL0)
- - Hold a solid colored object about 6 inches front lens and press down on the white button located on top.
- - While doing this, the RGB LED under the lens provides feedback regarding which object is directly in its frame. For example, the LED turns orange when an orange ball is placed in front of Pixy.
- - Release the button after the LED flashes white and the trained color reappears.
+ - [Instructions](http://cmucam.org/projects/cmucam5/wiki/Teach_Pixy_an_object_2#Teach-Pixy-an-Object)
  
 5. Build and Run example script
  - `./build_hello_pixy.sh`
@@ -80,10 +78,9 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
   - `sudo cp pixy.rules /etc/udev/rules.d/`
   - To Open PixyMon, `cd ../../../build/pixymon/bin/`
   - `./PixyMon`
-  - [Instructions](http://cmucam.org/projects/cmucam5/wiki/Teach_Pixy_an_object_2) to train the PixyCam through PixyMon
+  - [Instructions](http://cmucam.org/projects/cmucam5/wiki/Teach_Pixy_an_object_2#Teaching-through-PixyMon) to train the PixyCam through PixyMon
   
  
-
 ## Raspberry Pi 2
 
 #### Configure embedded computer with Ubuntu and ROS (Raspberry Pi 2)
