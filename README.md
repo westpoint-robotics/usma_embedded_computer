@@ -57,12 +57,18 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
  - `./build_libpixyusb.sh`
  - `sudo ./install_libpixyusb.sh`
 
-4. Build and Run example script
+4. Set signature using the button on Pixy [(Video Demo)] (https://www.youtube.com/watch?v=7znEmgYZXL0)
+ - Hold a solid colored object about 6 inches front lens and press down on the white button located on top.
+ - While doing this, the RGB LED under the lens provides feedback regarding which object is directly in its frame. For example, the LED turns orange when an orange ball is placed in front of Pixy.
+ - Release the button after the LED flashes white and the trained color reappears.
+ 
+5. Build and Run example script
  - `./build_hello_pixy.sh`
  - `cd ../build/hello_pixy`
  - `sudo ./hello_pixy`
+ - In the output, you should see block information if color signatures have been set and if the signatures are currently being detected by Pixy.
  
-5. Install PixyMon (Optional) [[1]] (http://cmucam.org/projects/cmucam5/wiki/Installing_PixyMon_on_Linux)
+6. Install PixyMon (Optional) [[1]] (http://cmucam.org/projects/cmucam5/wiki/Installing_PixyMon_on_Linux)
   - Install QT: `sudo apt-get install qt4-dev-tools`
   - `sudo apt-get install qt4-qmake`
   - `sudo apt-get install qt4-default`
