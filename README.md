@@ -59,7 +59,7 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
 
 4. Set signature using the button on Pixy 
  - [Instructions](http://cmucam.org/projects/cmucam5/wiki/Teach_Pixy_an_object_2#Teach-Pixy-an-Object)
- - [(Video Demo)] (https://www.youtube.com/watch?v=7znEmgYZXL0)
+ - [Video Demo] (https://www.youtube.com/watch?v=7znEmgYZXL0)
  
 5. Build and Run example script
  - `./build_hello_pixy.sh`
