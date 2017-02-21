@@ -37,3 +37,7 @@
   - To Open PixyMon, `cd ../../../build/pixymon/bin/`
   - `./PixyMon`
   - [Instructions](http://cmucam.org/projects/cmucam5/wiki/Teach_Pixy_an_object_2#Teaching-through-PixyMon) to train the PixyCam through PixyMon
+  ---------------------------------------------------------
+  
+  - [Update Pixy Firmware] (http://cmucam.org/projects/cmucam5/wiki/Uploading_New_Firmware)
+  - 
