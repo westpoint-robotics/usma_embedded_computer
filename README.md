@@ -5,5 +5,5 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
 ### 2. [Raspberry Pi 2] (https://github.com/westpoint-robotics/usma_embedded_computer/blob/master/rpi2.md)
 ### 3. [Odroid] (https://github.com/westpoint-robotics/usma_embedded_computer/blob/master/odroid.md)
 
-## Extras:
-#### 1. [Pixy] (https://github.com/westpoint-robotics/usma_embedded_computer/blob/master/pixy.md)
+### Extras:
+#### 1. [PixyCam] (https://github.com/westpoint-robotics/usma_embedded_computer/blob/master/pixy.md)
