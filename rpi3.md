@@ -45,6 +45,7 @@
  - 'Automatically check for updates: Never'
  - 'When there are security updates: Display Immediately'
  - 'When there are other updates: Display every two weeks'
+ 
 ### 5. Install ROS (Optional)
 - Follow instructions on [ROS Wiki] (http://wiki.ros.org/kinetic/Installation/Ubuntu) for installing the latest version of ROS i.e. Kinetic Kame. It is compatible with Ubuntu 15.10 and 16.04 LTS. 
 - If you have an older platform such as Ubuntu 14.04 LTS, [ROS Indigo Igloo] (http://wiki.ros.org/indigo) is reccommended. [[g-r]] (http://www.german-robot.com/2016/05/26/raspberry-pi-sd-card-image/)
