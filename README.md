@@ -39,7 +39,16 @@ Instructions on configuring an embedded computer such as a Raspberry Pi or Odroi
  - Install modem program: `sudo apt-get install minicom`
  - Install git commands: `sudo apt-get install git`
  
-### 4. Install ROS (Optional)
+### 4. System Settings
+- Disable bluetooth on start-up
+ - gksu gedit /etc/rc.local
+ - Add `rfkill block bluetooth` in the line preceeding `exit 0`.
+- Disable automatic updates
+ - Go to 'System -> Administration -> Software & Updates -> Updates' and set the following:
+ - 'Automatically check for updates: Never'
+ - 'When there are security updates: Display Immediately'
+ - 'When there are other updates: Display every two weeks'
+### 5. Install ROS (Optional)
 - Follow instructions on [ROS Wiki] (http://wiki.ros.org/kinetic/Installation/Ubuntu) for installing the latest version of ROS i.e. Kinetic Kame. It is compatible with Ubuntu 15.10 and 16.04 LTS. 
 - If you have an older platform such as Ubuntu 14.04 LTS, [ROS Indigo Igloo] (http://wiki.ros.org/indigo) is reccommended. [[g-r]] (http://www.german-robot.com/2016/05/26/raspberry-pi-sd-card-image/)
   
