@@ -38,7 +38,7 @@
  
 ### 4. System Settings
 - Disable bluetooth on start-up
- - gksu gedit /etc/rc.local
+ - `gksu gedit /etc/rc.local`
  - Add `rfkill block bluetooth` in the line preceeding `exit 0`.
 - Disable automatic updates
  - Go to 'System -> Administration -> Software & Updates -> Updates' and set the following:
