@@ -30,6 +30,7 @@
 - The Wireless MAC Address of your device should be registered with the Computer Support Group to be able to connect to the EECSDS3 WiFi. This step is performed for devices issued in class or lab. If you have problems connecting, check with your OIC.
 
 ### 3. Install useful software and utilities
+- Type the following in a Terminal (Ctrl + Alt + T)
  - Install GNOME text editor: `sudo apt-get install gedit`
  - Install build essential: `sudo apt-get install build-essential -y`
  - Install SSH server: `sudo apt-get install openssh-server`
