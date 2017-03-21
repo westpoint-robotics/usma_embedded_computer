@@ -17,6 +17,7 @@
  - `sudo apt-get install openssh-server`
 4. Setup [wifi] (https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic) on your device.
  - Aother [reference] (https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-occidentalis).
+ - For use on drones with Pixhawk - [1](https://pixhawk.org/peripherals/onboard_computers/access_point)
  - `sudo nano /etc/network/interfaces`
   ```
   auto wlan0
