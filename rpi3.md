@@ -17,7 +17,7 @@
   - `sudo apt-get install gnome-disk-utility`
   - After installation is complete, open the GUI and follow [these] (https://www.youtube.com/watch?v=V_6GNyL6Dac) steps on using the GNOME Disk utility to 'Restore Disk Image'
  
-#### *To Clone from another SD Card* 
+#### *To Clone from another SD Card:* 
  - [Steps](http://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command) to clone an image already installed on another fully-operational SD Card.
  - If you have only a single SD Card reader/slot on your PC, follow [these](http://askubuntu.com/questions/753977/cloning-an-sd-card-to-another-in-ubuntu-using-a-single-sd-card-reader) instructions.
  
