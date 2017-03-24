@@ -17,6 +17,10 @@
   - `sudo apt-get install gnome-disk-utility`
   - After installation is complete, open the GUI and follow [these] (https://www.youtube.com/watch?v=V_6GNyL6Dac) steps on using the GNOME Disk utility to 'Restore Disk Image'
  
+#### *To Clone from another SD Card* 
+ - [Steps](http://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command) to clone an image already installed on another fully-operational SD Card.
+ - If you have only a single SD Card reader/slot on your PC, follow [these](http://askubuntu.com/questions/753977/cloning-an-sd-card-to-another-in-ubuntu-using-a-single-sd-card-reader) instructions.
+ 
 #### *To create the OS Disk using a Windows machine:*
  - Your SD Card, if not brand new, may have sector errors and odd partions. It is always advisable to format the drive before laying down the OS. You may download and use [this] (https://www.sdcard.org/downloads/formatter_4/) tool.  
  - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.1 LTS for Raspberry Pi.
