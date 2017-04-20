@@ -22,14 +22,14 @@
  - If you have only a single SD Card reader/slot on your PC, follow [these](http://askubuntu.com/questions/753977/cloning-an-sd-card-to-another-in-ubuntu-using-a-single-sd-card-reader) instructions.
  
 #### *To create the OS Disk using a Windows machine:*
- - Your SD Card, if not brand new, may have sector errors and odd partions. It is always advisable to format the drive before laying down the OS. You may download and use [this] (https://www.sdcard.org/downloads/formatter_4/) tool.  
+ - Your SD Card, if not brand new, may have sector errors and odd partions. It is always advisable to format the drive before laying down the OS. You may download and use [this](https://www.sdcard.org/downloads/formatter_4/) tool.  
  - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.1 LTS for Raspberry Pi.
- - Once download is complete, the .xz file size should be about 1.1GB. Use [7-Zip] (http://www.7-zip.org/) or [WinZip] (http://www.winzip.com/win/en/downwz.html) to extract the image.
- - Use [Win32 Disk Imager] (https://sourceforge.net/projects/win32diskimager/) to write the image onto the SD card.
+ - Once download is complete, the .xz file size should be about 1.1GB. Use [7-Zip](http://www.7-zip.org/) or [WinZip](http://www.winzip.com/win/en/downwz.html) to extract the image.
+ - Use [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/) to write the image onto the SD card.
  - Open Disk Imager and select path to the image you extracted in the above step. Also select the target device to write onto. This would be the drive corresponding to the SD Card reader (Example- F: or H:)
 
 ### 2. Initial setup 
-- If this your first time with the RPi, you may find the first two pages of this [Quick Start Guide] (https://www.raspberrypi.org/qsg) useful. Ignore the SD Card setup portion, we are not utilizing NOOBS.
+- If this your first time with the RPi, you may find the first two pages of this [Quick Start Guide](https://www.raspberrypi.org/qsg) useful. Ignore the SD Card setup portion, we are not utilizing NOOBS.
 - On the first boot, the Pi will run through a setup wizard where you can create a user account. Please check with the OIC or Engineering Support Group personnel before creating the username and password. We follow a standard convention for ease of operation.
 - The Wireless MAC Address of your device should be registered with the Computer Support Group to be able to connect to the EECSDS3 WiFi. This step is performed for devices issued in class or lab. If you have problems connecting, check with your OIC.
 
@@ -62,5 +62,5 @@
  - 'When there are other updates: Display every two weeks'
  
 ### 5. Install ROS (Optional)
-- Follow instructions on [ROS Wiki] (http://wiki.ros.org/kinetic/Installation/Ubuntu) for installing the latest version of ROS i.e. Kinetic Kame. It is compatible with Ubuntu 15.10 and 16.04 LTS. 
-- If you have an older platform such as Ubuntu 14.04 LTS, [ROS Indigo Igloo] (http://wiki.ros.org/indigo) is reccommended. [[g-r]] (http://www.german-robot.com/2016/05/26/raspberry-pi-sd-card-image/)
+- Follow instructions on [ROS Wiki](http://wiki.ros.org/kinetic/Installation/Ubuntu) for installing the latest version of ROS i.e. Kinetic Kame. It is compatible with Ubuntu 15.10 and 16.04 LTS. 
+- If you have an older platform such as Ubuntu 14.04 LTS, [ROS Indigo Igloo](http://wiki.ros.org/indigo) is reccommended. [[g-r]](http://www.german-robot.com/2016/05/26/raspberry-pi-sd-card-image/)
