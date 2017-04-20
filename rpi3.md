@@ -2,6 +2,14 @@
 
 ### 1. Installing OS (Ubuntu MATE)
  *Our disk is going to be a microSDHC Card. Use one with memory greater than 8GB and speed class higher than 10. [[1]](https://ubuntu-mate.org/raspberry-pi/) [[2]](https://www.youtube.com/watch?v=m5QXsKSwt-c)*
+ 
+#### *To create the OS Disk using a Windows machine:*
+ - Your SD Card, if not brand new, may have sector errors and odd partions. It is always advisable to format the drive before laying down the OS. You may download and use [this](https://www.sdcard.org/downloads/formatter_4/){:target="_blank"} tool.  
+ - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.1 LTS for Raspberry Pi.
+ - Once download is complete, the .xz file size should be about 1.1GB. Use [7-Zip](http://www.7-zip.org/) or [WinZip](http://www.winzip.com/win/en/downwz.html) to extract the image.
+ - Use [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/) to write the image onto the SD card.
+ - Open Disk Imager and select path to the image you extracted in the above step. Also select the target device to write onto. This would be the drive corresponding to the SD Card reader (Example- F: or H:)
+ 
 #### *To create the OS Disk using a Linux machine:*
 - *Option 1*: Using the 'dd' utility in command line:
   - `sudo apt-get install gddrescue xz-utils`
@@ -20,13 +28,6 @@
 #### *To Clone from another SD Card:* 
  - [Steps](http://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command) to clone an image already installed on another fully-operational SD Card.
  - If you have only a single SD Card reader/slot on your PC, follow [these](http://askubuntu.com/questions/753977/cloning-an-sd-card-to-another-in-ubuntu-using-a-single-sd-card-reader) instructions.
- 
-#### *To create the OS Disk using a Windows machine:*
- - Your SD Card, if not brand new, may have sector errors and odd partions. It is always advisable to format the drive before laying down the OS. You may download and use [this](https://www.sdcard.org/downloads/formatter_4/) tool.  
- - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.1 LTS for Raspberry Pi.
- - Once download is complete, the .xz file size should be about 1.1GB. Use [7-Zip](http://www.7-zip.org/) or [WinZip](http://www.winzip.com/win/en/downwz.html) to extract the image.
- - Use [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/) to write the image onto the SD card.
- - Open Disk Imager and select path to the image you extracted in the above step. Also select the target device to write onto. This would be the drive corresponding to the SD Card reader (Example- F: or H:)
 
 ### 2. Initial setup 
 - If this your first time with the RPi, you may find the first two pages of this [Quick Start Guide](https://www.raspberrypi.org/qsg) useful. Ignore the SD Card setup portion, we are not utilizing NOOBS.
