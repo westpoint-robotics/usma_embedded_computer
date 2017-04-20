@@ -1,7 +1,7 @@
 ## Raspberry Pi 3 
 
 ### 1. Installing OS (Ubuntu MATE)
- *Our disk is going to be a microSDHC Card. Use one with memory greater than 8GB and speed class higher than 10. [[1]](https://ubuntu-mate.org/raspberry-pi/) [[2]] (https://www.youtube.com/watch?v=m5QXsKSwt-c)*
+ *Our disk is going to be a microSDHC Card. Use one with memory greater than 8GB and speed class higher than 10. [[1]](https://ubuntu-mate.org/raspberry-pi/) [[2]](https://www.youtube.com/watch?v=m5QXsKSwt-c)*
 #### *To create the OS Disk using a Linux machine:*
 - *Option 1*: Using the 'dd' utility in command line:
   - `sudo apt-get install gddrescue xz-utils`
@@ -11,11 +11,11 @@
   - The microSDHC Card maybe present as /sd**a** or /sd**b**. You can identify the device name by `ls /dev/sd*`
   - Once you've identified 'x' in /dev/sd**x**, run the following command by replacing 'x'.
   - `sudo ddrescue -D --force ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img /dev/sdx`
-  - [Here's] (https://asciinema.org/a/34243) the complete recording of the terminal while executing these commands
+  - [Here's](https://asciinema.org/a/34243) the complete recording of the terminal while executing these commands
   
 - *Option 2*: Using a graphical tool:
   - `sudo apt-get install gnome-disk-utility`
-  - After installation is complete, open the GUI and follow [these] (https://www.youtube.com/watch?v=V_6GNyL6Dac) steps on using the GNOME Disk utility to 'Restore Disk Image'
+  - After installation is complete, open the GUI and follow [these](https://www.youtube.com/watch?v=V_6GNyL6Dac) steps on using the GNOME Disk utility to 'Restore Disk Image'
  
 #### *To Clone from another SD Card:* 
  - [Steps](http://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command) to clone an image already installed on another fully-operational SD Card.
