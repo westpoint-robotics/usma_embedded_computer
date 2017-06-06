@@ -26,8 +26,8 @@
   - After installation is complete, open the GUI and follow [these](https://www.youtube.com/watch?v=V_6GNyL6Dac) steps on using the GNOME Disk utility to 'Restore Disk Image'
  
 #### *To Clone from another SD Card:* 
- - [Steps](http://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command) to clone an image already installed on another fully-operational SD Card.
- - If you have only a single SD Card reader/slot on your PC, follow [these](http://askubuntu.com/questions/753977/cloning-an-sd-card-to-another-in-ubuntu-using-a-single-sd-card-reader) instructions.
+- *On Ubuntu-* [Steps](http://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command) to clone an image already installed on another fully-operational SD Card. If you have only a single SD Card reader/slot on your PC, follow [these](http://askubuntu.com/questions/753977/cloning-an-sd-card-to-another-in-ubuntu-using-a-single-sd-card-reader) instructions.
+- *On Windows-* [Steps](https://computers.tutsplus.com/articles/how-to-clone-your-raspberry-pi-sd-cards-with-windows--mac-59294) to clone Raspberry Pi SD Card using Windows
 
 ### 2. Initial setup 
 - If this your first time with the RPi, you may find the first two pages of this [Quick Start Guide](https://www.raspberrypi.org/qsg) useful. Ignore the SD Card setup portion, we are not utilizing NOOBS.
