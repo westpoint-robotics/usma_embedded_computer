@@ -42,19 +42,18 @@
  - Install git commands: `sudo apt-get install git`
  
 ### 4. System Settings
-- Assign a Static IP Address on the DS3
- - In a terminal, type `gedit /etc/network/interfaces`. Add these lines:
- - `auto wlan0`
- - `iface wlan0 inet static`
- - `address 192.168.200.xxx` Check with OIC to fill in the last octet.
- - `netmask 255.255.255.0`
- - `gateway 192.168.200.254`
- - `wpa-ssid "EECSDS3"`
- - `wpa-psk "accessgranted"`
- - `dns-nameservers 66.155.216.122 207.59.153.242`
-- Disable bluetooth on start-up
- - `gksu gedit /etc/rc.local`
- - Add `rfkill block bluetooth` in the line preceeding `exit 0`.
+- If you are connected to EECSDS3 and want to assign a static IP Address, add these lines to the network interfaces file: `gedit /etc/network/interfaces`
+ ```
+ auto wlan0
+ iface wlan0 inet static
+ address 192.168.200.xxx
+ netmask 255.255.255.0
+ gateway 192.168.200.254
+ wpa-ssid "EECSDS3"
+ wpa-psk "accessgranted"
+ dns-nameservers 66.155.216.122 207.59.153.242
+```
+- If you are connected to EECSnet and would a static IP address, provide your OIC with the IP address (10.113.xx.xx) and we can reserve it for the device.
 - Disable automatic updates
  - Go to 'System -> Administration -> Software & Updates -> Updates' and set the following:
  - 'Automatically check for updates: Never'
