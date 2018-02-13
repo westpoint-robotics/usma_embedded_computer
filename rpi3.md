@@ -31,8 +31,9 @@
 
 ### 2. Initial setup 
 - If this your first time with the RPi, you may find the first two pages of this [Quick Start Guide](https://www.raspberrypi.org/qsg) useful. Ignore the SD Card setup portion, we are not utilizing NOOBS.
-- On the first boot, the Pi will run through a setup wizard where you can create a user account. Please check with the OIC or Engineering Support Group personnel before creating the username and password. We follow a standard convention for ease of operation.
-- The Wireless MAC Address of your device should be registered with the Computer Support Group to be able to connect to the EECSDS3 WiFi. This step is performed for devices issued in class or lab. If you have problems connecting, check with your OIC.
+- On the first boot, the Pi will run through a setup wizard where you can create a user account. Please check with the OIC before creating the username and password. We follow a standard convention for ease of operation.
+- EECSDS3 WiFi: The Wireless MAC Address of your device should be registered with the Computer Support Group to be able to connect to the EECSDS3. Use the `ifconfig` command to display your device's MAC address. Provide your OIC with the MAC corresponding to the wireless interface.
+- EECSnet WiFi: You will need to create user accounts to access this network. To create an account and obtain login credentials, see your OIC.
 
 ### 3. Install useful software and utilities
 - Type the following in a Terminal (Ctrl + Alt + T)
@@ -65,3 +66,15 @@
 ### 5. Install ROS (Optional)
 - Follow instructions on [ROS Wiki](http://wiki.ros.org/kinetic/Installation/Ubuntu) for installing the latest version of ROS i.e. Kinetic Kame. It is compatible with Ubuntu 15.10 and 16.04 LTS. 
 - If you have an older platform such as Ubuntu 14.04 LTS, [ROS Indigo Igloo](http://wiki.ros.org/indigo) is reccommended. [[g-r]](http://www.german-robot.com/2016/05/26/raspberry-pi-sd-card-image/)
+- After ROS installation is complete, install additional tools: `sudo apt-get install git-core python-argparse python-wstool python-vcstools python-rosdep ros-kinetic-control-msgs ros-kinetic-joystick-drivers`
+- Create ROS workspace:
+```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+catkin_init_workspace
+cd ~/catkin_ws/
+catkin_make
+echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
+source $HOME/catkin_ws/devel/setup.bash
+rospack profile
+```
