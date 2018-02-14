@@ -9,7 +9,13 @@
  - Use [Etcher](https://github.com/resin-io/etcher/releases/download/v1.3.1/Etcher-Setup-1.3.1-x64.exe) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader (Example- F: or H:)
  
 #### *To create the OS Disk using a Linux machine:*
-- *Option 1*: Using the 'dd' utility in command line:
+- *Option 1*: Using Etcher (Recommended):
+- [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.2 LTS for Raspberry Pi. Once download is complete, the .xz file size should be about 1.2GB.
+ - Use [Etcher](https://github.com/resin-io/etcher/releases/download/v1.3.1/etcher-1.3.1-linux-x86_64.zip) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader (/dev/media)
+- *Option 2*: Using a Gnome utility:
+  - `sudo apt-get install gnome-disk-utility`
+  - After installation is complete, open the GUI and follow [these](https://www.youtube.com/watch?v=V_6GNyL6Dac) steps on using the GNOME Disk utility to 'Restore Disk Image'
+- *Option 3*: Using the 'dd' utility in command line:
   - `sudo apt-get install gddrescue xz-utils`
   - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.2 LTS for Raspberry Pi. Once download is complete, the .xz file size should be about 1.2GB.
   - `cd Downloads/`
@@ -18,10 +24,6 @@
   - Once you've identified 'x' in /dev/sd**x**, run the following command by replacing 'x'.
   - `sudo ddrescue -D --force ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img /dev/sdx`
   - [Here's](https://asciinema.org/a/34243) the complete recording of the terminal while executing these commands
-  
-- *Option 2*: Using a graphical tool:
-  - `sudo apt-get install gnome-disk-utility`
-  - After installation is complete, open the GUI and follow [these](https://www.youtube.com/watch?v=V_6GNyL6Dac) steps on using the GNOME Disk utility to 'Restore Disk Image'
  
 #### *To Clone from another SD Card:* 
 - *On Ubuntu-* [Steps](http://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command) to clone an image already installed on another fully-operational SD Card. If you have only a single SD Card reader/slot on your PC, follow [these](http://askubuntu.com/questions/753977/cloning-an-sd-card-to-another-in-ubuntu-using-a-single-sd-card-reader) instructions.
