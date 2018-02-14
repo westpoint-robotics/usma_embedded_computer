@@ -10,8 +10,8 @@
  
 #### *To create the OS Disk using a Linux machine:*
 - *Option 1*: Using Etcher (Recommended):
-- [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.2 LTS for Raspberry Pi. Once download is complete, the .xz file size should be about 1.2GB.
- - Use [Etcher](https://github.com/resin-io/etcher/releases/download/v1.3.1/etcher-1.3.1-linux-x86_64.zip) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader (/dev/media)
+  - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.2 LTS for Raspberry Pi. Once download is complete, the .xz file size should be about 1.2GB.
+  - Use [Etcher](https://github.com/resin-io/etcher/releases/download/v1.3.1/etcher-1.3.1-linux-x86_64.zip) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader (/dev/media)
 - *Option 2*: Using a Gnome utility:
   - `sudo apt-get install gnome-disk-utility`
   - After installation is complete, open the GUI and follow [these](https://www.youtube.com/watch?v=V_6GNyL6Dac) steps on using the GNOME Disk utility to 'Restore Disk Image'
