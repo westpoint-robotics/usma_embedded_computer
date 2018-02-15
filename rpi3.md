@@ -39,13 +39,6 @@
 ### 3. Install useful software and utilities
 - Type the following in a Terminal (Ctrl + Alt + T)
  - Install GNOME text editor: `sudo apt-get install gedit`
- - Install atom text editor (optional)
- ```
-sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:webupd8team/atom
-sudo apt-get update
-sudo apt-get install atom
-```
  - Install build essential: `sudo apt-get install build-essential -y`
  - Install SSH server: `sudo apt-get install openssh-server`
  - Install modem program: `sudo apt-get install minicom`
