@@ -20,8 +20,7 @@
   - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.2 LTS for Raspberry Pi. Once download is complete, the .xz file size should be about 1.2GB.
   - `cd Downloads/`
   - `unxz ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img.xz`
-
-- The microSDHC Card maybe present as /sd**a** or /sd**b**. You can identify the device name by `ls /dev/sd*`
+  - The microSDHC Card maybe present as /sd**a** or /sd**b**. You can identify the device name by `ls /dev/sd*`
   - Once you've identified 'x' in /dev/sd**x**, run the following command by replacing 'x'.
   - `sudo ddrescue -D --force ubuntu-mate-16.04-desktop-armhf-raspberry-pi.img /dev/sdx`
   - [Here's](https://asciinema.org/a/34243) the complete recording of the terminal while executing these commands
