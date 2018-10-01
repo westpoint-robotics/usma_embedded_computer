@@ -42,6 +42,7 @@
  - Install SSH server: `sudo apt-get install openssh-server`
  - Install modem program: `sudo apt-get install minicom`
  - Install git commands: `sudo apt-get install git`
+ - `sudo apt-get install bash-completion`
  
 ### 4. System Settings
 - If you are connected to EECSDS3 and want to assign a static IP Address, add these lines to the network interfaces file: `gedit /etc/network/interfaces`
