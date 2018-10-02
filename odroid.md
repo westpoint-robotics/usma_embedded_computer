@@ -1,16 +1,16 @@
 # --- Odroid as Turtlebot2 computer ---
 
 ### 1. Installing OS (Ubuntu MATE)
- *Our disk is going to be a microSDHC Card. Use one with memory greater than 8GB and speed class higher than 10. [[1]](https://ubuntu-mate.org/raspberry-pi/) [[2]](https://www.youtube.com/watch?v=m5QXsKSwt-c)*
- - Your SD Card, if not brand new, may have sector errors and odd partions. It is always advisable to format the drive before laying down the OS. You may download and use [this](https://www.sdcard.org/downloads/formatter_4/) tool. 
+ *Our disk is going to be an eMMC Card. Use one with memory greater than 16GB. [[1]](https://ubuntu-mate.org/raspberry-pi/) [[2]](https://www.youtube.com/watch?v=m5QXsKSwt-c)*
+ - Your eMMC is not brand new, it may have sector errors and odd partions. It is always advisable to format the drive before laying down the OS. You may download and use [this](https://www.sdcard.org/downloads/formatter_4/) tool. 
  
 #### *To create the OS Disk using a Windows machine (Recommended):*
  - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.2 LTS for Raspberry Pi. Once download is complete, the .xz file size should be about 1.2GB.
- - Use [Etcher](https://github.com/resin-io/etcher/releases/download/v1.3.1/Etcher-Setup-1.3.1-x64.exe) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader (Example- F: or H:)
+ - Use [Etcher](https://github.com/resin-io/etcher/releases/download/v1.3.1/Etcher-Setup-1.3.1-x64.exe) to write the image onto the eMMC. The target device to write onto would be the drive corresponding to the SD Card reader / USB adapter (Example- F: or H:)
  
 #### *To create the OS Disk using a Linux machine:*
  - [Download](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz) Ubuntu MATE 16.04.2 LTS for Raspberry Pi. Once download is complete, the .xz file size should be about 1.2GB.
- - Use [Etcher](https://github.com/resin-io/etcher/releases/download/v1.3.1/etcher-1.3.1-linux-x86_64.zip) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader (/dev/media)
+ - Use [Etcher](https://github.com/resin-io/etcher/releases/download/v1.3.1/etcher-1.3.1-linux-x86_64.zip) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader / USB adapter (/dev/media)
  
 #### *To Clone from another SD Card:*- 
 - *On Ubuntu-* [Steps](http://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command) to clone an image already installed on another fully-operational SD Card. If you have only a single SD Card reader/slot on your PC, follow [these](http://askubuntu.com/questions/753977/cloning-an-sd-card-to-another-in-ubuntu-using-a-single-sd-card-reader) instructions.
@@ -39,7 +39,7 @@
  netmask 255.255.255.0
  gateway 192.168.200.254
  wpa-ssid "EECSDS3"
- wpa-psk "accessgranted"
+ wpa-psk "<check with OIC>"
  dns-nameservers 66.155.216.122 207.59.153.242
 ```
 - If you are connected to EECSnet[(screenshot)](https://github.com/westpoint-robotics/usma_embedded_computer/blob/master/UbuntuEECSNetWirelessConfiguration.jpg) and would like a static IP address, provide your OIC with the IP address (10.113.xx.xx) and we can reserve it for the device.
@@ -73,7 +73,6 @@ rospack profile
 ```
 export TURTLEBOT_BASE=kobuki
 export TURTLEBOT_BATTERY="/sys/class/power_supply/hidpp_battery_2"
-export TURTLEBOT_STACKS=hexagons
 export TURTLEBOT_3D_SENSOR=astra
 export TURTLEBOT_SIMULATION=false
 export TURTLEBOT_SERIAL_PORT=/dev/kobuki
