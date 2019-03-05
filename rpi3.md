@@ -45,7 +45,11 @@
  - `sudo apt-get install bash-completion`
  
 ### 4. System Settings
-- If you are connected to EECSDS3 and want to assign a static IP Address, add these lines to the network interfaces file: `gedit /etc/network/interfaces`
+- Network Related:
+1. To connect to EECSnet, see the network configuration settings here:  [(screenshot)](https://github.com/westpoint-robotics/usma_embedded_computer/blob/master/UbuntuEECSNetWirelessConfiguration.jpg)
+2. To get your Raspberry Pi to automatically connect to EECSnet upon power-up, you must enable auto-login.  Follow the step outlined in the following link and be sure to use your username, not the one shown in the example.  (https://ubuntu-mate.community/t/auto-login-to-the-desktop/60)
+3. If you are connected to EECSnet and would like a static IP address, provide your OIC with the IP address (10.113.xx.xx) and we can reserve it for the device.
+4. If you are connected to EECSDS3 and want to assign a static IP Address, add these lines to the network interfaces file: `gedit /etc/network/interfaces`
  ```
  auto wlan0
  iface wlan0 inet static
@@ -56,8 +60,7 @@
  wpa-psk "accessgranted"
  dns-nameservers 66.155.216.122 207.59.153.242
 ```
-- If you are connected to EECSnet[(screenshot)](https://github.com/westpoint-robotics/usma_embedded_computer/blob/master/UbuntuEECSNetWirelessConfiguration.jpg) and would like a static IP address, provide your OIC with the IP address (10.113.xx.xx) and we can reserve it for the device.
-- To get your Raspberry Pi to automatically connect to EECSnet upon power-up, you must enable auto-login.  Follow the step outlined in the following link and be sure to use your username, not the one shown in the example.  (https://ubuntu-mate.community/t/auto-login-to-the-desktop/60)
+
 - Disable automatic updates
  - Go to 'System -> Administration -> Software & Updates -> Updates' and set the following:
  - 'Automatically check for updates: Never'
