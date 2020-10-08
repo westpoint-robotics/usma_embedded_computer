@@ -1,7 +1,7 @@
 ## Raspberry Pi 4 
 
-### 1. Installing OS (Ubuntu MATE)
- *Our disk is going to be a microSDHC Card. Use one with memory greater than 8GB and speed class higher than 10. [[1]](https://www.pidramble.com/wiki/benchmarks/microsd-cards) [[2]](https://www.youtube.com/watch?v=m5QXsKSwt-c)*
+### 1. Installing OS (Ubuntu MATE 32-bit)
+ *Our disk is going to be a microSDHC Card. Use one with memory greater than 16GB and speed class higher than 10. [[1]](https://www.pidramble.com/wiki/benchmarks/microsd-cards) [[2]](https://www.youtube.com/watch?v=m5QXsKSwt-c)*
  - Your SD Card, if not brand new, may have sector errors and odd partions. It is always advisable to format the drive before laying down the OS. You may download and use [this](https://www.sdcard.org/downloads/formatter_4/) tool. 
  
 #### *To create the OS Disk using a Windows machine (Recommended):*
@@ -10,7 +10,7 @@
  
 #### *To create the OS Disk using a Linux machine:*
 - *Option 1*: Using Etcher (Recommended):
-  - [Download](https://releases.ubuntu-mate.org/bionic/armhf/ubuntu-mate-18.04.2-beta1-desktop-armhf+raspi-ext4.img.xz) Ubuntu MATE 18.04.2 32-bit (Compatible with Raspberry Pi 3B, 3B+, 4B). Once download is complete, the .xz file size should be about 1.2GB.
+  - [Download](https://releases.ubuntu-mate.org/bionic/armhf/ubuntu-mate-18.04.2-beta1-desktop-armhf+raspi-ext4.img.xz) Ubuntu MATE 18.04.2 __32-bit__ (Compatible with Raspberry Pi 3B, 3B+, 4B). Once download is complete, the .xz file size should be about 1.2GB.
   - Use [Etcher](https://github.com/balena-io/etcher/releases/download/v1.5.109/balena-etcher-electron-1.5.109-linux-x64.zip) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader (/dev/media)
 - *Option 2*: Using a Gnome utility:
   - `sudo apt-get install gnome-disk-utility`
