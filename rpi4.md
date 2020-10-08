@@ -33,7 +33,7 @@
  - `sudo apt-get install bash-completion`
  
 ### 4. System Settings -> Software & Updates
-- 'Ubuntu Software' tab [Ref](https://help.ubuntu.com/community/Repositories/Ubuntu)
+- 'Ubuntu Software' tab [[3]](https://help.ubuntu.com/community/Repositories/Ubuntu)
   - Check the top four boxes under 'Downloadable from the Internet': main, universe, restricted, multiverse.
 - 'Updates tab'
   - Check te first two boxes: bionic-security and bionic-updates
