@@ -29,7 +29,7 @@
  - Install build essential: `sudo apt-get install gparted build-essential -y`
  - Install SSH server: `sudo apt-get install openssh-server`
  - Install modem program: `sudo apt-get install minicom`
- - Install git commands: `sudo apt-get install git gitk git-core`
+ - Install git commands: `sudo apt-get install git gitk git-core git-doc`
  
 ### 4. System Settings -> Software & Updates
 - 'Ubuntu Software' tab [[3]](https://help.ubuntu.com/community/Repositories/Ubuntu)
