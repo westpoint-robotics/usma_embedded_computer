@@ -30,7 +30,6 @@
  - Install SSH server: `sudo apt-get install openssh-server`
  - Install modem program: `sudo apt-get install minicom`
  - Install git commands: `sudo apt-get install git gitk git-core`
- - `sudo apt-get install bash-completion`
  
 ### 4. System Settings -> Software & Updates
 - 'Ubuntu Software' tab [[3]](https://help.ubuntu.com/community/Repositories/Ubuntu)
