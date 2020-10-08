@@ -33,14 +33,14 @@
  - `sudo apt-get install bash-completion`
  
 ### 4. System Settings -> Software & Updates
-- Ubuntu Software tab [ref](https://help.ubuntu.com/community/Repositories/Ubuntu)
- - Check the top four boxes under 'Downloadable from the Internet': main, universe, restricted, multiverse.
-- Updates tab
- - Check te first two boxes: bionic-security and bionic-updates
- - 'Automatically check for updates: Never'
- - 'When there are security updates: Display Immediately'
- - 'When there are other updates: Display every two weeks'
- - 'Notify me of a new Ubuntu version: Never'
+- 'Ubuntu Software' tab [Ref](https://help.ubuntu.com/community/Repositories/Ubuntu)
+  - Check the top four boxes under 'Downloadable from the Internet': main, universe, restricted, multiverse.
+- 'Updates tab'
+  - Check te first two boxes: bionic-security and bionic-updates
+  - 'Automatically check for updates: Never'
+  - 'When there are security updates: Display Immediately'
+  - 'When there are other updates: Display every two weeks'
+  - 'Notify me of a new Ubuntu version: Never'
  
 ### 5. Install ROS (Optional)
 - Follow instructions on [ROS Wiki](http://wiki.ros.org/melodic/Installation/Ubuntu) for installing the ROS Melodic. Download the 'full-desktop' version.
