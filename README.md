@@ -1,7 +1,7 @@
 # usma_embedded_computer
 Instructions on configuring an embedded computer such as a Raspberry Pi or Odroid
 
-### 1. [Raspberry Pi 4](https://github.com/westpoint-robotics/usma_embedded_computer/blob/master/rpi4.md) with Ubuntu MATE 20.04
+### 1. [Raspberry Pi 4](https://github.com/westpoint-robotics/usma_embedded_computer/blob/master/rpi4-20.md) with Ubuntu MATE 20.04
 ### 2. [Raspberry Pi 4](https://github.com/westpoint-robotics/usma_embedded_computer/blob/master/rpi4.md) with Ubuntu MATE 18.04
 ### 3. [Raspberry Pi 3](https://github.com/westpoint-robotics/usma_embedded_computer/blob/master/rpi3.md) 
 ### 4. [Odroid (Turtlebot)](https://github.com/westpoint-robotics/usma_embedded_computer/blob/master/odroid.md)
