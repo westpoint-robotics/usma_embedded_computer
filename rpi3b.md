@@ -1,4 +1,4 @@
-## Raspberry Pi 4 
+## Raspberry Pi 3B/3B+ 
 
 ### 1. Installing OS (Ubuntu MATE 32-bit)
  *Our disk is going to be a microSDHC Card. Use one with memory greater than 16GB and speed class higher than 10. [[1]](https://www.pidramble.com/wiki/benchmarks/microsd-cards) [[2]](https://www.youtube.com/watch?v=m5QXsKSwt-c)*
