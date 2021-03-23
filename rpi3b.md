@@ -7,6 +7,10 @@
 #### *To create the OS Disk using a Windows machine (Recommended):*
  - [Download](https://releases.ubuntu-mate.org/bionic/armhf/ubuntu-mate-18.04.2-beta1-desktop-armhf+raspi-ext4.img.xz) Ubuntu MATE 18.04.2 32-bit (Compatible with Raspberry Pi 3B, 3B+, 4B). Once download is complete, the .xz file size should be about 1.2GB.
  - Use [Etcher](https://github.com/balena-io/etcher/releases/download/v1.5.109/balenaEtcher-Setup-1.5.109.exe) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader (Example- F: or H:)
+
+#### For EE487 
+ - For Ubuntu Mate 20.04.01 [Download](https://releases.ubuntu-mate.org/focal/armhf/ubuntu-mate-20.04.1-desktop-armhf+raspi.img.xz)
+ - Raspberry Pi Imager is a popular disk utility [Download](https://www.raspberrypi.org/software/)
  
 #### *To create the OS Disk using a Linux machine:*
 - *Option 1*: Using Etcher (Recommended):
