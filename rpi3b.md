@@ -3,22 +3,25 @@
 ### 1. Installing OS (Ubuntu MATE 32-bit)
  *Our disk is going to be a microSDHC Card. Use one with memory greater than 16GB and speed class higher than 10. [[1]](https://www.pidramble.com/wiki/benchmarks/microsd-cards) [[2]](https://www.youtube.com/watch?v=m5QXsKSwt-c)*
  - Your SD Card, if not brand new, may have sector errors and odd partions. It is always advisable to format the drive before laying down the OS. You may download and use [this](https://www.sdcard.org/downloads/formatter_4/) tool. 
- 
-#### *To create the OS Disk using a Windows machine (Recommended):*
- - [Download](https://releases.ubuntu-mate.org/bionic/armhf/ubuntu-mate-18.04.2-beta1-desktop-armhf+raspi-ext4.img.xz) Ubuntu MATE 18.04.2 32-bit (Compatible with Raspberry Pi 3B, 3B+, 4B). Once download is complete, the .xz file size should be about 1.2GB.
- - Use [Etcher](https://github.com/balena-io/etcher/releases/download/v1.5.109/balenaEtcher-Setup-1.5.109.exe) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader (Example- F: or H:)
 
 #### *For EE487 - use these instructions*
  - Raspberry Pi Imager is a popular disk utility [Download](https://www.raspberrypi.org/software/)
  - For Ubuntu Mate 18.04 [Download](https://usarmywestpoint.sharepoint.com/:f:/r/sites/eecs.cadet/Shared%20Documents/Courses/EE/EE487/RPi_Images?csf=1&web=1&e=HYEvGl) (WREN only)
-  
-#### *To create the OS Disk using a Linux machine:*
-- *Option 1*: Using Etcher (Recommended):
-  - [Download](https://releases.ubuntu-mate.org/bionic/armhf/ubuntu-mate-18.04.2-beta1-desktop-armhf+raspi-ext4.img.xz) Ubuntu MATE 18.04.2 __32-bit__ (Compatible with Raspberry Pi 3B, 3B+, 4B). Once download is complete, the .xz file size should be about 1.2GB.
-  - Use [Etcher](https://github.com/balena-io/etcher/releases/download/v1.5.109/balena-etcher-electron-1.5.109-linux-x64.zip) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader (/dev/media)
-- *Option 2*: Using a Gnome utility:
-  - `sudo apt-get install gnome-disk-utility`
-  - After installation is complete, open the GUI and follow [these](https://www.youtube.com/watch?v=V_6GNyL6Dac) steps on using the GNOME Disk utility to 'Restore Disk Image'
+
+#### *A. Download an Ubuntu Mate image*
+- [Download](https://releases.ubuntu-mate.org/archived/bionic/armhf/ubuntu-mate-18.04.2-beta1-desktop-armhf+raspi-ext4.img.xz) Ubuntu MATE 18.04.2 __32-bit__ (Compatible with Raspberry Pi 3B, 3B+, 4B). Once download is complete, the .xz file size should be about 1.2GB.
+- If the above leads to a dead link (these things sometimes change), you may try either of the following
+  - Search for `ubuntu mate 18.04 img`
+  - Visit the [Ubuntu Mate archive](https://releases.ubuntu-mate.org/archived/); select the version you need (note, for 18.04, "bionic" is equivalent); select the armhf directory; and download to ~1.2 GB .img.xz file (e.g. ubuntu-mate-18.04.2-beta1-desktop-armhf+raspi-ext4.img.xz).
+ 
+#### *B. Create the OS Disk:*
+ -  **Using a Windows machine (Recommended):** Use [Etcher](https://github.com/balena-io/etcher/releases/download/v1.5.109/balenaEtcher-Setup-1.5.109.exe) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader (Example- F: or H:) 
+ -  **Using a Linux machine:**
+   - *Option 1*: Using Etcher (Recommended):
+     - Use [Etcher](https://github.com/balena-io/etcher/releases/download/v1.5.109/balena-etcher-electron-1.5.109-linux-x64.zip) to write the image onto the SD card. The target device to write onto would be the drive corresponding to the SD Card reader (/dev/media)
+   - *Option 2*: Using a Gnome utility:
+     - `sudo apt-get install gnome-disk-utility`
+     - After installation is complete, open the GUI and follow [these](https://www.youtube.com/watch?v=V_6GNyL6Dac) steps on using the GNOME Disk utility to 'Restore Disk Image'
 
 ### 2. Initial setup 
 - If this your first time with the RPi, you may find the first two pages of this [Quick Start Guide](https://www.raspberrypi.org/qsg) useful. Ignore the SD Card setup portion, we are not utilizing NOOBS.
